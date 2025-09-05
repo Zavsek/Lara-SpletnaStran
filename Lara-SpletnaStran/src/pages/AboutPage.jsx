@@ -1,35 +1,116 @@
 import React from 'react'
+import Stats from '../components/Stats'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 
 const AboutPage = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); 
+  }, []);
   return (
-    <div className='w-full pt-20  pb-10 flex justify-center'>
- <div class="card bg-base-100 w-[60%] shadow-sm">
-  <figure className='relative max-h-50'>
-    <img
-      src="https://media.timeout.com/images/106150176/image.jpg"
-      alt="Shoes" 
-      className=' flex-shrink-0'/>
-  </figure>
-  <div class="card-body">
-    <h1 class="card-title w-full justify-center font-bold from-neutral-600">Življenjepis</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+    <div>
+      
+      {/* 1. del */}
+    <div className="w-full pt-40 pb-10 px-10 flex gap-5">  
+      <div className="card bg-base-100 shadow-sm flex-1">
+        <div className="card-body">
+          <h1 className="card-title w-full text-3xl font-bold text-neutral-600">
+            Življenjepis
+          </h1>
+          <p className='text-xl'>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus
+            ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus
+            duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar
+            vivamus fringilla lacus nec metus bibendum egestas...
+                     Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus
+            ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus
+            duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar
+            vivamus fringilla lacus nec metus bibendum egestas...
+          </p>
+        </div>
+      </div>
+      <div  class="divider  lg:divider-horizontal"></div>
+      <div className="flex-1">
+        <figure className="h-full">
+          <img
+            src="https://media.timeout.com/images/106150176/image.jpg"
+            alt="Shoes"
+            className="w-full h-full object-cover rounded-xl"
+            />
+        </figure>
+      </div>
+    </div>
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+      {/* 2. del */}
+        <div  className="w-full pt-10 pb-10 px-10 flex gap-5">  
+    
+      <div  data-aos='fade-up' className="flex-1">
+        <figure className="h-full">
+          <img
+            src="https://cdn.britannica.com/73/189273-050-355658ED/Denali-peak-center-Alaska-Range-North-America.jpg"
+            alt="Shoes"
+            className="w-full h-full object-cover rounded-xl"
+            />
+        </figure>
+      </div>
+        <div class="divider  lg:divider-horizontal"></div>
+      <div data-aos='fade-up' className="card bg-base-100 shadow-sm flex-1">
+        <div className="card-body">
+          <h1 className="card-title w-full text-3xl font-bold text-neutral-600">
+            Življenjepis
+          </h1>
+          <p className='text-xl'>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus
+            ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus
+            duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar
+            vivamus fringilla lacus nec metus bibendum egestas...
+                     Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus
+            ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus
+            duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar
+            vivamus fringilla lacus nec metus bibendum egestas...
+          </p>
+        </div>
+      </div>
+    </div>
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-
-  </div>
-</div>
-</div>
+    {/* 3. del */}
+        <div className="w-full pt-10 pb-10 px-10 flex gap-5">  
+      <div className="card bg-base-100 shadow-sm flex-1">
+        <div className="card-body">
+          <h1 className="card-title w-full text-3xl font-bold text-neutral-600">
+            Življenjepis
+          </h1>
+          <p className='text-xl'>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus
+            ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus
+            duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar
+            vivamus fringilla lacus nec metus bibendum egestas...
+                     Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus
+            ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus
+            duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar
+            vivamus fringilla lacus nec metus bibendum egestas...
+          </p>
+        </div>
+      </div>
+      <div class="divider  lg:divider-horizontal"></div>
+      <div className="flex-1">
+        <figure className="h-full">
+          <img
+            src="https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg"
+            alt="Shoes"
+            className="w-full h-full object-cover rounded-xl"
+            />
+        </figure>
+      </div>
+    </div>
+       {/* 4. del */}
+    <div className='w-full pb-10 px-10'>
+        <Stats />
+    </div>
+    </div>
   )
 }
+
 
 export default AboutPage
