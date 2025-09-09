@@ -1,5 +1,5 @@
 import React from 'react'
-import { ShowcaseVideo } from '../components/ShowcaseVideo'
+import { ShowcaseVideo } from '../components/mini/ShowcaseVideo'
 
 const video1 = {
   videoUrl: "https://pagedone.io/asset/uploads/1705298724.mp4",

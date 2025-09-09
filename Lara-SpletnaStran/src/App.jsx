@@ -7,6 +7,8 @@ import Footer from './components/Footer';
 import AboutPage from './pages/AboutPage';
 import { ShowcasePage } from './pages/ShowcasePage';
 import { ContactPage } from './pages/ContactPage';
+import OfferingPage from './pages/OfferingPAge';
+
 
 const App = () => {
   return (
@@ -25,7 +27,6 @@ const App = () => {
   );
 };
 
-const OfferingPage = () => <div className="pt-20 p-4"><h2>Ponudba</h2></div>;
 
 
 export default App;

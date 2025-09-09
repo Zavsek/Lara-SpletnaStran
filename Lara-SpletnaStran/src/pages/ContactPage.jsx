@@ -1,5 +1,6 @@
 import { Facebook, Instagram, Mail, Phone } from 'lucide-react'
 import React from 'react'
+import { ContactForm } from '../components/ContactForm'
 
 export const ContactPage = () => {
   return (
@@ -75,11 +76,7 @@ export const ContactPage = () => {
           </div>
         </div>
         {/* Image Section */}
-        <img
-          src="https://cdn.flyonui.com/fy-assets/blocks/marketing-ui/contact/contact-8.png"
-          alt="Contact illustration"
-          className=""
-        />
+        <ContactForm />
 
       </div>
   )

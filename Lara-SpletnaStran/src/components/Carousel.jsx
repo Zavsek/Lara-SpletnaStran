@@ -48,7 +48,7 @@ export default function Carousel({slides}){
                 SetCurrentPicture(i);
               }} 
               key={"circle" +i}
-              className={`rounded-full w-4 h-4 cursor-pointer ${i===CurrPicture ? "bg-white" : "bg-gray-300"}`}>
+              className={`rounded-full w-3 h-3 cursor-pointer ${i===CurrPicture ? "bg-white" : "bg-gray-300"} transition-transform hover:scale-120 hover:shadow-2xl`}>
 
               </div>);
             })}
