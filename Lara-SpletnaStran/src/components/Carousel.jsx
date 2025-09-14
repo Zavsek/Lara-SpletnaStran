@@ -28,19 +28,19 @@ export default function Carousel({slides}){
         <div className="absolute inset-0 flex items-center justify-between p-4">
         <button
           onClick={previousSlide}
-          className="p-2 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors"
+          className="p-2 rounded-full bg-gray-700/30 text-white hover:bg-black/40 transition-all hover:scale-110"
         >
-          <ArrowLeft size={32} />
+          <ArrowLeft size={25} />
         </button>
         <button
           onClick={nextSlide}
-          className="p-2 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors"
+          className="p-2 rounded-full bg-gray-700/30 text-white hover:bg-black/40 transition-all hover:scale-110"
         >
-          <ArrowRight size={32} />
+          <ArrowRight size={25} />
         </button>
       </div>
 
-        <div className='absolute bottom-0 py-4 flex justify-center gap-5 w-full'>
+        <div className='absolute bottom-0 py-4 flex justify-center gap-1 w-full'>
             {slides.map((s, i) =>{
               return(   
               <div
@@ -48,7 +48,7 @@ export default function Carousel({slides}){
                 SetCurrentPicture(i);
               }} 
               key={"circle" +i}
-              className={`rounded-full w-3 h-3 cursor-pointer ${i===CurrPicture ? "bg-white" : "bg-gray-300"} transition-transform hover:scale-120 hover:shadow-2xl`}>
+              className={`rounded-xs w-5 h-1 cursor-pointer ${i===CurrPicture ? "bg-white" : "bg-gray-700/70 border-1 border-gray-100"} transition-all duration-300 hover:scale-120 hover:shadow-2xl`}>
 
               </div>);
             })}
