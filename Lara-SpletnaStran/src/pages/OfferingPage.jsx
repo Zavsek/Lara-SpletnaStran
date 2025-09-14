@@ -6,7 +6,7 @@ import { OfferingText } from '../components/mini/OfferingText'
 const text = "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas..."
 const OfferingPage = () => {
   return (
-    <div className='w-screen px-15 pt-20 pb-5 gap-10 grid grid-cols-3 md:grid-rows-3'>
+    <div className='w-screen px-15 pt-20 pb-5 gap-10 grid grid-cols-3'>
         <div className='w-full  rounded-3xl lg: max-h-80'>
             <OfferingCard Icon={Gem} Title={"Poroke"} Text={"Najami me za svojo poroko"}/>
             <OfferingText Text={text} Image={"https://c8.alamy.com/comp/2HAENNG/a-vertical-shot-of-a-beautiful-outdoor-wedding-venue-2HAENNG.jpg"} className="pt-10"/>
