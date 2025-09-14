@@ -8,5 +8,6 @@ export default defineConfig({
   plugins: [tailwindcss(), react()],
   resolve: {
     dedupe: ['react', 'react-dom']
-  }
+  },
+  base: "/Lara-SpletnaStran/"
 })
