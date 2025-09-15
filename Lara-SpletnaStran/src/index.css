@@ -1,2 +1,10 @@
 @import "tailwindcss";
-@plugin "daisyui"
+@plugin "daisyui";
+
+@theme {
+  --color-drkblue: #586f7c;
+  --color-lgtblue: #f1f272;
+  --color-washedGold: #2f4550;
+  --color-darkGold: #DDE600;
+  --color-cstRed: #f4f4f9;
+}

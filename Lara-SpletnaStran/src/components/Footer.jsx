@@ -15,7 +15,7 @@ const Footer = () => {
                 <Link to='https://facebook.com' className='hover:underline pr-5'><Youtube/></Link>
             
     </div>
-    <div className='  justify-center align-center w-full flex '>Booking:<Phone /> +386555555  <Mail /> example@email.com</div>
+    <div className='  justify-center align-center w-full flex gap-2'>Booking:<Phone /> +386555555  <Mail /> example@email.com</div>
     <ul className="flex relative flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
         <li>
             <Link to="/about" className="hover:underline me-4 md:me-6">Življenjepis</Link>
