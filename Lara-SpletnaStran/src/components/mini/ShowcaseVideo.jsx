@@ -177,7 +177,7 @@ export const ShowcaseVideo = ({ video }) => {
           onClick={toggleDescription}>
           <span className="relative ">
             Prikaži opis
-            <span className="absolute left-0 bottom-0 h-0.5 w-full bg-amber-500 scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
+            <span className="absolute left-0 bottom-0 h-0.5 w-full bg-amber-500 scale-x-0 origin-left border-0 transition-transform duration-300 group-hover:scale-x-100"></span>
           </span>
           {showDescription ? <ChevronUp /> : <ChevronDown />}
         </button>

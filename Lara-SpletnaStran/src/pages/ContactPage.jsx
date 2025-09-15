@@ -4,7 +4,7 @@ import { ContactForm } from '../components/ContactForm'
 
 export const ContactPage = () => {
   return (
-          <div className="grid pt-18 px-10 mb-5 max-h-2/3 items-center gap-12 lg:grid-cols-2">
+          <div className="grid pt-18 px-10 mb-5 max-h-2/3  h-screen items-center gap-12 lg:grid-cols-2">
         {/* Contact Info Section */}
         <div>
           {/* Section Title */}
@@ -17,7 +17,7 @@ export const ContactPage = () => {
           </p>
 
           {/* Contact Info Grid */}
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
             {/* Office Hours */}
             <div className="card shadow-lg">
               <div className="card-body items-center gap-3">

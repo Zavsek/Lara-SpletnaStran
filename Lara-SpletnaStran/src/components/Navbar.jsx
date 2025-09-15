@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FileUser, Music, BadgeEuro, Mail, Menu, X} from "lucide-react";
 import { useState } from "react";
 
@@ -13,38 +13,54 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-full">
           {/* Logo / ime */}
           <div className="flex items-center gap-8">
-            <Link
+            <NavLink
               to="/"
               className="flex items-center gap-2.5 hover:opacity-80 transition-all"
             >
               <h1 className="text-lg font-bold">Lara Pelikan</h1>
-            </Link>
+            </NavLink>
           </div>
 
           {/* Meni */}
           <div className="hidden md:flex items-center gap-2">
-            <Link
+            <NavLink
               to="/About"
-              className="btn btn-sm gap-2 transition-colors"
+              className={({ isActive }) =>
+              `btn btn-sm gap-2 transition-colors ${
+                isActive ? "btn" : "btn-ghost"
+              }`
+            }
             >
               <FileUser className="w-4 h-4" />
               <span className="hidden sm:inline">Življenjepis</span>
-            </Link>
+            </NavLink>
 
-            <Link to="/ShowCase" className="btn btn-sm btn-ghost gap-2">
+            <NavLink to="/ShowCase" className={({ isActive }) =>
+              `btn btn-sm gap-2 transition-colors ${
+                isActive ? "btn" : "btn-ghost"
+              }`
+            }>
               <Music className="w-5 h-5" />
               <span className="hidden sm:inline">Showcase</span>
-            </Link>
+            </NavLink>
 
-            <Link to="/Offering" className="btn btn-sm btn-ghost gap-2">
+            <NavLink to="/Offering" className={({ isActive }) =>
+              `btn btn-sm gap-2 transition-colors ${
+                isActive ? "btn" : "btn-ghost"
+              }`
+            }>
               <BadgeEuro className="w-5 h-5" />
               <span className="hidden sm:inline">Ponudba</span>
-            </Link>
+            </NavLink>
 
-            <Link to="/Contact" className="btn btn-sm btn-ghost gap-2">
+            <NavLink to="/Contact" className={({ isActive }) =>
+              `btn btn-sm gap-2 transition-colors ${
+                isActive ? "btn" : "btn-ghost"
+              }`
+            }>
               <Mail className="w-5 h-5" />
               <span className="hidden sm:inline">Kontakt</span>
-            </Link>
+            </NavLink>
           </div>
 
           <button
@@ -57,44 +73,44 @@ const Navbar = () => {
   <div className="md:hidden bg-amber-700 shadow-lg rounded-b-2xl animate-fade-in">
     <ul className="flex flex-col gap-2 px-4 py-4 text-lg font-medium text-white">
       <li>
-        <Link
+        <NavLink
           to="/About"
           className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-amber-600 transition"
           onClick={() => setOpen(false)}
         >
           <FileUser className="w-5 h-5" />
           Življenjepis
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link
+        <NavLink
           to="/ShowCase"
           className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-amber-600 transition"
           onClick={() => setOpen(false)}
         >
           <Music className="w-5 h-5" />
           Showcase
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link
+        <NavLink
           to="/Offering"
           className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-amber-600 transition"
           onClick={() => setOpen(false)}
         >
           <BadgeEuro className="w-5 h-5" />
           Ponudba
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link
+        <NavLink
           to="/Contact"
           className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-amber-600 transition"
           onClick={() => setOpen(false)}
         >
           <Mail className="w-5 h-5" />
           Kontakt
-        </Link>
+        </NavLink>
       </li>
     </ul>
   </div>

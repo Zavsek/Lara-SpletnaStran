@@ -8,6 +8,7 @@ import AboutPage from './pages/AboutPage';
 import { ShowcasePage } from './pages/ShowcasePage';
 import { ContactPage } from './pages/ContactPage';
 import OfferingPage from './pages/OfferingPAge';
+import ScrollToTop from './components/ScrollToTop';
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
 
     <div>
       <Navbar />
+      <ScrollToTop />
       <Routes>
           <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
