@@ -5,9 +5,11 @@ import HomePage from './pages/HomePage';
 import {BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import AboutPage from './pages/AboutPage';
+
 import { ShowcasePage } from './pages/ShowcasePage';
 import { ContactPage } from './pages/ContactPage';
 import OfferingPage from './pages/OfferingPAge';
+
 
 
 const App = () => {
@@ -26,7 +28,6 @@ const App = () => {
     </div>
   );
 };
-
 
 
 export default App;
