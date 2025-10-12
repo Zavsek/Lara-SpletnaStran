@@ -1,14 +1,35 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-
+import {useState, useEffect} from 'react'
 
 const AboutShort = () => {
+    const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.5 } 
+    );
+
+    const element = document.getElementById('textElement');
+    observer.observe(element);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+
   return (
     <div className="flex w-full flex-col lg:flex-row m-auto align-middle">
-  <div className="card w-[75%] bg-base-100 card-lg shadow-sm">
-  <div className="card-body">
-    <h2 className="card-title">Lara Pelikan</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <div className=" w-[75%] p-5 rounded-sm bg-base-100 card-lg shadow-md border-2 border-blue-300/80">
+  <div className="">
+    <h2 id="textElement" className={` font-semibold transition-all duration-500 font-primary `}>Lara Pelikan</h2>
+    <p className='pb-3 pt-2 font-secondary'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     <div className="justify-end card-actions">
     </div>
   </div>

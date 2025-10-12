@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react'
 import emailjs from "@emailjs/browser";
+import dotenv from "dotenv"
 
 
 export const ContactForm = () => {
@@ -8,13 +9,13 @@ export const ContactForm = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    dotenv.config()
     emailjs
       .sendForm(
-        "service_4z8p9xn",    // EmailJS Service ID
-        "template_uqzfr6t",   // EmailJS Template ID
+        process.env.EMAILJS_EMAIL_ID,    // EmailJS Service ID
+        process.env.EMAILJS_TEMPLATE_ID,   // EmailJS Template ID
         form.current,
-        "7K21HfOZR4GIqhi7i"     // EmailJS Public Key
+        process.env.EMAILJS_PUBLIC_KEY     // EmailJS Public Key
       )
       .then(
         () =>setSuccess(true),

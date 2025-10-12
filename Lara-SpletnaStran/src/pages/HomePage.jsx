@@ -15,7 +15,7 @@ const HomePage = () => {
   ]
   return (
   <div className='w-full m-auto'>
-    <div className='w-[80%] m-auto pb-10'>
+    <div className='w-full m-auto pb-10'>
     <Carousel  slides={slides} />
     </div>
     <div className='w-[80%] m-auto pb-10 flex justify-center'>
